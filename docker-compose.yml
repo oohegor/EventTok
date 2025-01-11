@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    container_name: event-tok
+    build: .
+    ports:
+      - "80:80"
+      - "4041:4040"
+    volumes:
+      - .:/usr/share/nginx/html
